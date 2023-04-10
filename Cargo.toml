@@ -1,5 +1,5 @@
 [package]
-name = "os_entry_point"
+name = "SimpleOS"
 version = "0.1.0"
 edition = "2021"
 
@@ -13,3 +13,5 @@ panic = "abort"
 
 [dependencies]
 bootloader = "0.9.23"
+
+#qemu-system-x86_64 -drive format=raw,file=target/x86_64_SimpleOS/debug/bootimage-SimpleOS.bin
